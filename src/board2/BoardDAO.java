@@ -11,8 +11,6 @@ import java.util.Scanner;
 public class BoardDAO {
     private List<Board> boards = new ArrayList<>();
     private Scanner scanner = new Scanner(System.in);
-    private boolean isInitialized;  // 초기 게시물을 한 번만 추가하도록 제어하는 변수
-
 
     public void addBoard(String title, String content, String writer) {
         int nextId = boards.size() + 1;
