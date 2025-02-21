@@ -170,7 +170,7 @@ public class BoardDAO {
     }
 
     private void reversList() {
-        System.out.println("\n[게시물 목록 - 역순]");
+        System.out.println("\n[게시물 목록]");
         System.out.println("---------------------------------------------");
         System.out.println("no \t writer\t date  \t\t title");
         System.out.println("---------------------------------------------");
