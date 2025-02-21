@@ -1,3 +1,5 @@
+package board1;
+
 import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
@@ -55,8 +57,10 @@ public class Main {
         if (submenu == 1) {
             boardExample.addBoard(title, content, author);
             reversList();
-        } else {
+        } else if(submenu == 2){
             System.out.println("게시물 추가가 취소되었습니다.");
+        }else{
+            System.out.println("잘못된 선택입니다. 다시 시도하세요.");
         }
     }
 

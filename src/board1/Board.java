@@ -1,3 +1,5 @@
+package board1;
+
 import lombok.Data;
 
 import java.time.LocalDateTime;
