@@ -219,7 +219,8 @@ public class BoardDAO {
                         break;
                     case 4:
                         System.out.println("** 게시판 종료 **");
-                        return;
+                        System.exit(0);
+
                     default:
                         System.out.println("잘못된 선택입니다. 1 ~ 4를 선택해주세요.");
                         break;
