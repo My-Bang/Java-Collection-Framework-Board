@@ -32,7 +32,7 @@ public class Main {
                     break;
                 case 4:
                     System.out.println("** 게시판 종료 **");
-                    return;
+                    System.exit(0);
                 default:
                     System.out.println("잘못된 선택입니다. 다시 시도하세요.");
             }
