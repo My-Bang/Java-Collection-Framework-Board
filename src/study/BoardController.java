@@ -91,7 +91,12 @@ public class BoardController {
     public void create() {
         Board newboard = new Board();
         Scanner in = new Scanner(System.in);
-        newboard.setBno(boardService.list.size() + 1);
+        int maxBno = boardService.list.stream()
+                .mapToInt(Board::getBno)
+                .max()
+                .orElse(0);
+
+        newboard.setBno(maxBno +1);
         System.out.println("\n[새 게시물 입력]");
         System.out.print("제목: ");
         String title = in.nextLine();
