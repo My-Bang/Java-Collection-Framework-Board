@@ -1,4 +1,4 @@
-package study;
+package board4;
 
 import lombok.Data;
 

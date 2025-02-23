@@ -1,4 +1,4 @@
-package study;
+package board4;
 
 import java.util.Scanner;
 
@@ -12,7 +12,6 @@ public class BoardController {
         System.out.println("no \t\t write \t\t date \t\t title");
         System.out.println("-------------------------------------------");
         boardService.getBoards();
-
         System.out.println("-------------------------------------------");
 
         mainMenu();
@@ -84,9 +83,7 @@ public class BoardController {
         } else {
             System.out.println("다시 입력해 주세요");
         }
-
     }
-
 
     public void create() {
         Board newboard = new Board();
@@ -96,7 +93,7 @@ public class BoardController {
                 .max()
                 .orElse(0);
 
-        newboard.setBno(maxBno +1);
+        newboard.setBno(maxBno + 1);
         System.out.println("\n[새 게시물 입력]");
         System.out.print("제목: ");
         String title = in.nextLine();
