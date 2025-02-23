@@ -3,7 +3,7 @@ package board4;
 import java.util.Scanner;
 
 public class BoardController {
-    BoardService boardService = new BoardService();
+    BoardServiceDAO boardService = new BoardServiceDAO();
     Scanner in = new Scanner(System.in);
 
     public void list() {
