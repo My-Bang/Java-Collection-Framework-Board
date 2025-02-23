@@ -53,6 +53,7 @@ public class BoardService implements BoardService1 {
         }
     }
 
+
     @Override
     public void deleteBoard(int id) {
         list.removeIf(board1 -> board1.getBno() == id);
